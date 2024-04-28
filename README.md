@@ -1,6 +1,3 @@
-# landing-page-afg
-Template de Landing Page para uso pessoal
-
 # README - Landing Page da Empresa XYZ Engenharia
 
 ## Descrição da Empresa
