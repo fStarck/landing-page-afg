@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset de estilos para garantir consistência */
+*,
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* * {
+  outline: 1px solid greenyellow;
+} */
+
+:root {
+  --cor-background: #0E0C38;
+  --cor-primaria: #007bff;
+  --cor-secundaria: #007bff;
+  --cor-tercearia: #342424;
+  --cor-texto-claro: #ddd;
+  --cor-texto-escuro: #666D41;
+  --cor-titulo: #885759;
+  --cor-botao: #666D41;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--cor-background);
+  color: var(--cor-texto-claro);
+  margin: 1rem;
+
+  a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+  }
+}
+
+h1 {
+  color: var(--cor-texto-claro);
+  font-size: 2.8rem;
+}
+
+p {
+  margin: 0.65rem 0;
+  text-decoration: none;
+}
+
+.inicio {
+  margin-top: 5rem;
+
+  .foto-perfil {
+    display: none;
+  }
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--cor-botao);
+}
+
+.buttons a.button:nth-of-type(2) {
+  box-shadow: inset 0 0 0 2px white;
+  background-color: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .header-logo {
+    font-size: 3rem;
+    font-family: "Alumni Sans Pinstripe", sans-serif;  }
+
+  .menu-list {
+    display: none;
+  }
+}
+
+.menu-burguer {
+  font-size: 1.5rem;
+}
+
+.header-logo {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+.texto-competencias {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.redes {
+  font-size: 2rem;
+  display: flex;
+  justify-content: start;
+
+  a {
+    padding: 0;
+    margin: 0 1rem;
+  }
+}
+
+.muda-pagina {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+
+}
+
+
+.typing-line {
+  font-size: 1.5rem;
+  padding: 0 20px;
+  animation: typing 4s steps(40) infinite;
+  color: var(--cor-texto-escuro);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
